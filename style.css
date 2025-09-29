@@ -113,3 +113,71 @@ footer {
     background-color: #1e1e1e;
     color: #fff;
 }
+/* ===== Media Queries ===== */
+
+/* للجوالات: الشاشات أقل من 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* يجعل الروابط عمودية */
+    text-align: center;
+  }
+
+  nav h2 {
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+    display: block;
+  }
+
+  .content {
+    flex-direction: column; /* البطاقات تتكدس بدلًا من صف */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%; /* البطاقة تأخذ تقريبًا كامل العرض */
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* للأجهزة اللوحية: الشاشات بين 769px و 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    margin: 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+}
+
