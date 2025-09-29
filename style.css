@@ -12,6 +12,8 @@ body{
 
 /* شريط التنقل */
 nav {
+    position: sticky;
+    top: 0;
     border-radius: 20px;
     display: flex;
     flex-direction: row-reverse;
@@ -180,4 +182,3 @@ footer {
     font-size: 15px;
   }
 }
-
